@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import {AuthClient} from "@dfinity/auth-client"
 
-
-const [isLoggedIn, setIsLoggedIn] = useState(false); // Utilizado para apresentar os botão Login e Logout
+function index() {
+  
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Utilizado para apresentar os botão Login e Logout
 
   async function login() {
 
@@ -43,9 +44,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false); // Utilizado para apresenta
   document.addEventListener("DOMContentLoaded", function() {    
      document.getElementById("logout").style.display = "none";
   });
-
-
-function index() {
+  
   
   return (           
 
